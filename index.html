@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bài tập hàm</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- (Optional) Use CSS or JS implementation -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+      integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <div class="exercise p-5">
+    <div class="container p-4">
+      <div class="d-flex align-items-start">
+        <div
+          class="nav flex-column nav-pills me-5"
+          id="v-pills-tab"
+          role="tablist"
+          aria-orientation="vertical"
+        >
+          <button
+            class="nav-link active mb-2"
+            id="v-pills-home-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-home"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-home"
+            aria-selected="true"
+          >
+            Bài 1
+          </button>
+          <button
+            class="nav-link mb-2"
+            id="v-pills-profile-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-profile"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-profile"
+            aria-selected="false"
+          >
+            Bài 2
+          </button>
+          <button
+            class="nav-link mb-2"
+            id="v-pills-messages-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-messages"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-messages"
+            aria-selected="false"
+          >
+            Bài 3
+          </button>
+          <button
+            class="nav-link mb-2"
+            id="v-pills-settings-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-settings"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-settings"
+            aria-selected="false"
+          >
+            Bài 4
+          </button>
+        </div>
+        <div class="tab-content" id="v-pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="v-pills-home"
+            role="tabpanel"
+            aria-labelledby="v-pills-home-tab"
+            tabindex="0"
+          >
+            <div class="exercise_1">
+              <h2>Quản lý tuyển sinh</h2>
+            </div>
+            <form action="" id="formTuyenSinh">
+              <div class="row">
+                <div class="col-4">
+                  <div class="mb-3">
+                    <label for="" class="form-label text-white"></label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      name=""
+                      id="diemChuan"
+                      aria-describedby="helpId"
+                      placeholder="Điểm chuẩn"
+                    />
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="mb-3">
+                    <select
+                      class="form-select form-select-lg"
+                      name=""
+                      id="diemKhuVuc"
+                    >
+                      <option value="0">Chọn khu vực</option>
+                      <option value="2">A</option>
+                      <option value="1">B</option>
+                      <option value="0.5">C</option>
+                    </select>
+                  </div>
+                  
+                </div>
+                <div class="col-4">
+                  <div class="mb-3">
+                    <select
+                      class="form-select form-select-lg"
+                      name=""
+                      id="diemDoiTuong"
+                    >
+                      <option value="0">Chọn đối tượng</option>
+                      <option value="2.5">1</option>
+                      <option value="1.5">2</option>
+                      <option value="1">3</option>
+                    </select>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-4">
+                  <div class="mb-3">
+                    <label for="" class="form-label text-white"></label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      name=""
+                      id="diemMonThu1"
+                      aria-describedby="helpId"
+                      placeholder="Điểm môn thứ 1"
+                    />
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="mb-3">
+                    <label for="" class="form-label text-white"></label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      name=""
+                      id="diemMonThu2"
+                      aria-describedby="helpId"
+                      placeholder="Điểm môn thứ 2"
+                    />
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="mb-3">
+                    <label for="" class="form-label text-white"></label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      name=""
+                      id="diemMonThu3"
+                      aria-describedby="helpId"
+                      placeholder="Điểm môn thứ 3"
+                    />
+                  </div>
+                </div>
+              </div>
+            </form>
+            
+            <button class="btn btn-dark" id="btnKetQua">Kết quả</button>
+            <p class="bg-light text-dark p-2 rounded bg-opacity-75 mt-4 ketQua">👉 
+            </p>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="v-pills-profile"
+            role="tabpanel"
+            aria-labelledby="v-pills-profile-tab"
+            tabindex="0"
+          >
+          <div class="exercise_2">
+            <h2>Tính tiền điện</h2>
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="nhapHoTen"
+              aria-describedby="helpId"
+              placeholder="Nhập họ tên"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="number"
+              class="form-control"
+              name=""
+              id="soKw"
+              aria-describedby="helpId"
+              placeholder="Nhập số kw"
+            />
+          </div>
+          <button class="btn btn-dark" id="btnTinhTienDien">Tính tiền điện</button>
+          <p class="bg-light text-dark p-2 rounded bg-opacity-75 mt-4" id="ketQuaTinhTienDien">👉 </p>
+        </div>
+          <div
+            class="tab-pane fade"
+            id="v-pills-messages"
+            role="tabpanel"
+            aria-labelledby="v-pills-messages-tab"
+            tabindex="0"
+          >
+            <div class="exercise_3">
+             <h2>Tính thuế thu nhập cá nhân</h2>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <div class="mb-3">
+                  <input
+                  type="text"
+                  class="form-control"
+                  name=""
+                  id="hoTen"
+                  aria-describedby="helpId"
+                  placeholder="Nhập họ tên"
+                />
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="mb-3">
+                  <input
+                  type="number"
+                  class="form-control"
+                  name=""
+                  id="tongThuNhapNam"
+                  aria-describedby="helpId"
+                  placeholder="Tổng thu nhập năm"
+                />
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="mb-3">
+                  <input
+                  type="number"
+                  class="form-control"
+                  name=""
+                  id="soNguoiPhuThuoc"
+                  aria-describedby="helpId"
+                  placeholder="Số người phụ thuộc"
+                />
+                </div>
+              </div>
+            </div>
+            
+            <button class="btn btn-dark" id="btnTinhTienThueCaNhan">Tính Tiền Thuế</button>
+            <p class="bg-light text-dark p-2 rounded bg-opacity-75 mt-4" id="ketQuaTienThue">👉 </p>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="v-pills-settings"
+            role="tabpanel"
+            aria-labelledby="v-pills-settings-tab"
+            tabindex="0"
+          >
+          <div class="exercise_4">
+            <h2>Tính tiền cáp</h2>
+          </div>
+            
+              <form action="" id="formTinhTienCap">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="mb-3">
+                      <select
+                        class="form-select form-select-lg"
+                        name=""
+                        id="loaiKhachHang"
+                      >
+                        <option value="">Chọn loại khách hàng</option>
+                        <option value="Nhà Dân">Nhà dân</option>
+                        <option value="Doanh Nghiệp">Doanh nghiệp</option>
+                      </select>
+                    </div>
+                    
+                  </div>
+                  <div class="col-4">
+                    <div class="mb-3">
+                      <input
+                      type="text"
+                      class="form-control"
+                      name=""
+                      id="maKhachHang"
+                      aria-describedby="helpId"
+                      placeholder="Nhập mã khách hàng"
+                    />
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="mb-3">
+                      <input
+                      type="number"
+                      class="form-control"
+                      name=""
+                      id="soKenhCaoCap"
+                      aria-describedby="helpId"
+                      placeholder="Số kênh cao cấp"
+                    />
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="mb-3">
+                      <input
+                      type="number"
+                      class="form-control"
+                      name=""
+                      id="soKetNoi"
+                      aria-describedby="helpId"
+                      placeholder="Số kết nối"
+                    />
+                    </div>
+                  </div>
+                </div>
+              </form>
+           <button onclick="btnTinhTienCap()" class="btn btn-dark" id="btnTinhTienCap">Tính tiền cáp</button>
+           <p class="bg-light text-dark p-2 rounded bg-opacity-75 mt-4" id="ketQuaTinhTienCap">👉 </p>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
