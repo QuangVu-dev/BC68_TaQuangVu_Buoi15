@@ -48,17 +48,17 @@ document.getElementById("btnKetQua").onclick = function () {
     diemMonThu3 > 0
   ) {
     document.querySelector(".ketQua").innerHTML =
-      "Thí sinh đã đậu. Tổng điểm: " + tongDiem;
+      "👉 Thí sinh đã đậu. Tổng điểm: " + tongDiem;
   } else if (
     (tongDiem >= diemChuan && diemMonThu1 <= 0) ||
     diemMonThu2 <= 0 ||
     diemMonThu3 <= 0
   ) {
     document.querySelector(".ketQua").innerHTML =
-      "Thí sinh đã rớt. Do có điểm nhỏ hơn hoặc bằng 0";
+      "👉 Thí sinh đã rớt. Do có điểm nhỏ hơn hoặc bằng 0";
   } else {
     document.querySelector(".ketQua").innerHTML =
-      "Thí sinh đã rớt. Tổng điểm: " + tongDiem;
+      "👉 Thí sinh đã rớt. Tổng điểm: " + tongDiem;
   }
 };
 
@@ -112,7 +112,7 @@ document.querySelector("#btnTinhTienDien").onclick = function () {
       (soKw - 350) * tukwConLai;
   }
   document.getElementById("ketQuaTinhTienDien").innerHTML =
-    "Họ tên: " +
+    "👉 Họ tên: " +
     nhapHoTen +
     "; Tiền điện: " +
     tongTien.toLocaleString("vi", {
@@ -172,7 +172,7 @@ document.getElementById("btnTinhTienThueCaNhan").onclick = function () {
     tienThueThuNhapCaNhan = thuNhapChiuThue * thueXuatTren960;
   }
   document.getElementById("ketQuaTienThue").innerHTML =
-    "Họ tên: " +
+    "👉 Họ tên: " +
     hoTen +
     "; Tiền thuế thu nhập cá nhân: " +
     tienThueThuNhapCaNhan.toLocaleString("vi", {
@@ -245,7 +245,7 @@ function btnTinhTienCap() {
   }
   console.log(tinhHoaDon);
   document.getElementById("ketQuaTinhTienCap").innerHTML =
-    "Mã khách hàng: " +
+    "👉 Mã khách hàng: " +
     maKhachHang +
     "; Tiền cáp: " +
     tinhHoaDon.toLocaleString("en-US", {
